@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 251, 251);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #070707;
+    text-align: center;
+}
+
+
+main {
+    width: 400px;
+    max-height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .imagem {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid rgb(233, 233, 233);
+    outline: none;
+}
+
+.content img {
+    position: absolute;
+    top: -15px;
+    max-width: 100%;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transition: .5s all;
+}
+
+.content h1 {
+    margin-top: 1.5rem;
+}
+
+.content h2 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: .2rem;
+}
+
+.content p {
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0 1.5rem;
+    margin-top: 1rem;
+}
+
+.links {
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.links ul li {
+    border-radius: 10px;
+    background-color: rgb(235, 235, 235);
+    transition: .5s all;
+}
+
+.links ul li a {
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+    color: #070707;
+    transition: .5s all;
+}
+
+.links ul li a:hover {
+    color: #fff;
+}
+
+
+.links ul li:hover, 
+.content img:hover {
+    background-color: rgb(70, 73, 255);
+}
+
+.social-icons {
+    width: 80%;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: .2s linear;
+}
+
+.social-icons i:hover {
+    transform: scale(1.5);
+    color: rgb(70, 73, 255);
+}
+
+footer {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+}
